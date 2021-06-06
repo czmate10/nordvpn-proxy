@@ -10,7 +10,7 @@ echo "$(adddate) INFO: Creating new cronfile"
 touch "$cronfile"
 
 #Add cron for GET_OVPN_FILES
-printf "$CRON_OVPN_FILES '/app/ovpn/get-ovpn-files.sh'\n" > "$cronfile"
+# printf "$CRON_OVPN_FILES '/app/ovpn/get-ovpn-files.sh'\n" > "$cronfile"
 
 if [[ "${CRON}" ]]; then
     echo "$(adddate) INFO: Your cron settings (${CRON}) will be applied!"
